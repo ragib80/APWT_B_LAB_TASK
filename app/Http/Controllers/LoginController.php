@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\http\Requests\loginRequest;
 use App\Models\Admin;
 use App\Models\Customer;
-use App\Models\Vendor;
+use App\Models\User;
 use App\Models\Accountant;
 
 class LoginController extends Controller
@@ -20,7 +20,7 @@ class LoginController extends Controller
     
         
 
-            $user = Admin::where('email', $req->email)
+            $user = User::where('email', $req->email)
             ->where('password', $req->password)
             ->first();
 

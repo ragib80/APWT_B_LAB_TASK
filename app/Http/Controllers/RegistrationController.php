@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\http\Requests\RegistrationRequest;
 use App\Models\Admin;
 use App\Models\Customer;
-use App\Models\Vendor;
+use App\Models\User;
 use App\Models\Accountant;
 
 class RegistrationController extends Controller
@@ -19,7 +19,7 @@ class RegistrationController extends Controller
     {
 
     
-            $user = new Admin;
+            $user = new User;
             $user->user_name = $req->username;
             $user->full_name = $req->full_name;
             $user->password = $req->password;
