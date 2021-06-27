@@ -5,7 +5,6 @@ use Validator;
 use Illuminate\Http\Request;
 use App\http\Requests\RegistrationRequest;
 use App\Models\Admin;
-use App\Models\Customer;
 use App\Models\User;
 use App\Http\Requests\userRequest;
 
