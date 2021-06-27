@@ -7,7 +7,6 @@ use App\http\Requests\RegistrationRequest;
 use App\Models\Admin;
 use App\Models\Customer;
 use App\Models\User;
-use App\Models\Accountant;
 use App\Http\Requests\userRequest;
 
 class UserController extends Controller
